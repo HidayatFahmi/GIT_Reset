@@ -1,0 +1,35 @@
+.speciesAll{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("/homeBg.jpg");
+}
+
+.speciesAll-banner{
+    position: fixed;
+    left: 3%;
+    text-align: center;
+    background-image: url("/homeBg.jpg");
+}
+
+.speciesAll-banner .image-banner{
+display: flex;
+justify-content: center;
+}
+
+.speciesAll-banner img{
+    width: 750px;
+    height: 470px;
+}
+
+.speciesAll-sidebar{
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.speciesAll-sidebar img{
+    width: 400px;
+}

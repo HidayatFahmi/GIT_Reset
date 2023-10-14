@@ -1,0 +1,50 @@
+.starshipAll{
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+.starshipAll::before {
+    content: ""; 
+    background-image: url("/homeBg.jpg"); 
+    opacity: 1; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size: cover;
+    margin-top: -10px;
+    /* filter: blur(3px); */
+  }
+
+.starshipAll-banner{
+    position: fixed;
+    left: 3%;
+    text-align: center;
+    /* background-image: url("/homeBg.jpg"); */
+}
+
+.starshipAll-banner .image-banner{
+display: flex;
+justify-content: center;
+}
+
+.starshipAll-banner img{
+    width: 750px;
+    height: 470px;
+}
+
+.starshipAll-sidebar{
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.starshipAll-sidebar img{
+    width: 400px;
+}

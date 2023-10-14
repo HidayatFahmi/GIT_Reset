@@ -1,0 +1,34 @@
+.characterAll{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("/homeBg.jpg");
+}
+
+.characterAll-banner{
+    position: fixed;
+    left: 3%;
+    text-align: center;
+}
+
+.characterAll-banner .image-banner{
+display: flex;
+justify-content: center;
+}
+
+.characterAll-banner img{
+    width: 750px;
+    height: 470px;
+}
+
+.characterAll-sidebar{
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.characterAll-sidebar img{
+    width: 400px;
+}

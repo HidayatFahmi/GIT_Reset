@@ -1,0 +1,34 @@
+.vehicleAll{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("/homeBg.jpg");
+}
+
+.vehicleAll-banner{
+    position: fixed;
+    left: 3%;
+    text-align: center;
+}
+
+.vehicleAll-banner .image-banner{
+display: flex;
+justify-content: center;
+}
+
+.vehicleAll-banner img{
+    width: 750px;
+    height: 470px;
+}
+
+.vehicleAll-sidebar{
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.vehicleAll-sidebar img{
+    width: 400px;
+}

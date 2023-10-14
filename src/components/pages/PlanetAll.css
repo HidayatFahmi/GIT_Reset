@@ -1,0 +1,34 @@
+.planetAll{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url("/homeBg.jpg");
+}
+
+.planetAll-banner{
+    position: fixed;
+    left: 3%;
+    text-align: center;
+}
+
+.planetAll-banner .image-banner{
+display: flex;
+justify-content: center;
+}
+
+.planetAll-banner img{
+    width: 750px;
+    height: 470px;
+}
+
+.planetAll-sidebar{
+    position: absolute;
+    box-sizing: border-box;
+    right: 0;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.planetAll-sidebar img{
+    width: 400px;
+}

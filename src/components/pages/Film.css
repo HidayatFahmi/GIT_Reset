@@ -1,0 +1,77 @@
+.banner-film img{
+    background-image: url("/1FilmBanner.jpg");
+    height: 450px;
+    width: 700px;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+ .card img{
+    height: 250px;
+}
+
+.top-content {
+    position: relative; 
+  }
+  
+  .top-content::before {
+    content: ""; 
+    background-image: url("/FilmBackground.jpg"); 
+    opacity: 1; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size: cover;
+    margin-top: -10px;
+    filter: blur(3px);
+  }
+  .film-title{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .running-characters{
+    position: relative;
+    top: 20px;
+  }
+
+  .running-characters .text{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+  }
+
+  .characters-name{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+
+.running-characters h5{
+    background-color: aliceblue;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.running-characters img{
+    width: 380px;
+    height: 450px;
+}
+
+.starwars-content{
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+}
+
+.loading-film{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

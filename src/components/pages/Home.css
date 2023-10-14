@@ -1,0 +1,12 @@
+
+.carousel-item img{
+    width: 700px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.home-container{
+    background-image: url("/homeBg.jpg");
+    width: 100%;
+    background-size: cover;
+}
