@@ -2,29 +2,13 @@
     position: absolute;
     left: 0;
     right: 0;
-
+    background-image: url("/homeBg.jpg");
 }
-
-.starshipAll::before {
-    content: ""; 
-    background-image: url("/homeBg.jpg"); 
-    opacity: 1; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; 
-    background-size: cover;
-    margin-top: -10px;
-    /* filter: blur(3px); */
-  }
 
 .starshipAll-banner{
     position: fixed;
     left: 3%;
     text-align: center;
-    /* background-image: url("/homeBg.jpg"); */
 }
 
 .starshipAll-banner .image-banner{
@@ -32,19 +16,62 @@ display: flex;
 justify-content: center;
 }
 
+@media(max-width : 2000px){
 .starshipAll-banner img{
-    width: 750px;
-    height: 470px;
+    width: 640px;
+    height: 360px;
 }
+
+.starshipAll-sidebar img{
+    width: 300px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 2000px){
+.starshipAll-banner img{
+    width: 700px;
+    height: 450px;
+}
+
+.starshipAll-sidebar img{
+    width: 280px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 1200px){
+    .starshipAll-banner img{
+        width: 450px;
+        height: 300px;
+    }
+    
+    .starshipAll-sidebar img{
+        width: 220px;
+        /* height: 360px; */
+    }
+    }
+
+
+    @media(max-width : 992px){
+        
+        .starshipAll-sidebar img{
+            width: 400px;
+        }
+    }
+
+    @media(max-width : 575px){
+        
+        .starshipAll-sidebar img{
+            width: 230px;
+        }
+        }
 
 .starshipAll-sidebar{
     position: absolute;
     box-sizing: border-box;
-    right: 0;
+    right: 40px;
     height: 80vh;
     overflow-y: scroll;
 }
 
-.starshipAll-sidebar img{
-    width: 400px;
-}

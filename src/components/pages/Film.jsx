@@ -509,7 +509,7 @@ export default function Film(){
                     <div className="top-content">
                     <h1 className="film-title my-3">{title}</h1>
                     <div className="row d-flex justify-content-center">
-                        <div className="col-4 text-center">                         
+                        <div className="col-4 text-center d-none d-md-block">                         
                             <div className="running-characters ms-5">
                                 <div key={currentImageIndex}>
                                     <img src={charactersImage[idFilm][currentImageIndex]} alt="" />
@@ -519,7 +519,7 @@ export default function Film(){
                                 </div>
                             </div>
                         </div>
-                            <div className="col-6">
+                            <div className="col-12 col-md-6 d-flex text-center">
                                 <div className="container banner-film">
                                     <img src={`/${idFilm}FilmBanner.jpg`} alt="" />
                                 </div>
@@ -527,7 +527,7 @@ export default function Film(){
                     </div>
                     {/* Enf of Banner */}
                     <div className="row ms-5">
-                        <div className="col-6">
+                        <div className="col-12 col--md-6">
                             <div className="container director my-5 text-white">
                                 <p className="d-flex"><h5>Director : &nbsp; </h5>{director}</p>
                                 <hr />
@@ -540,16 +540,16 @@ export default function Film(){
                     </div>
                 </div>
                 {/* end of top content */}
-                <div className="container story-line">
+                <div className="container story-line col-9 col-sm-12">
                     <h2 className="border-start border-bottom border-warning border-3 ps-3 pb-2 mt-4">Story line</h2>
                     <p>{<StoryLines/>}</p>
                 </div>
-                <div className="container starships mt-4">
+                <div className="container starships mt-4 col-9 col-sm-12">
                     <div className="title"><h2 className="border-start border-bottom border-warning border-3 ps-3 pb-2">Starships</h2></div>
                     <hr />
                     <div className="row justify-content-center starwars-content">
                     {starshipsList.map((starship, index) => (
-                        <div className="col-md-3 mb-3" key={starship.name} onClick={()=>cekValue(index, starship)}>
+                        <div className="col-10 col-sm-6 col-md-4 col-lg-3 mb-3" key={starship.name} onClick={()=>cekValue(index, starship)}>
                             <div className="card" data-bs-toggle="modal" data-bs-target={`#starship${index}`}>
                                 <div className="card-header"><h5>{starship.name}</h5></div>
                                 <div className="card-body">
@@ -563,12 +563,12 @@ export default function Film(){
                     </div>
                 </div>
                 {/* End of starships */}
-                <div className="container vehicles mt-5">
+                <div className="container vehicles mt-5 col-9 col-sm-12">
                     <div className="title"><h2 className="border-start border-bottom border-warning border-3 ps-2 pb-2">Vehicles</h2></div>
                     <hr />
                     <div className="row justify-content-center starwars-content">
                     {vehiclesList.map((vehicle,index) => (
-                        <div className="col-md-3 mb-3" key={vehicle.name} data-bs-toggle="modal" data-bs-target={`vehicle${index}`}>
+                        <div className="col-10 col-sm-6 col-md-4 col-lg-3 mb-3 mb-3" key={vehicle.name} data-bs-toggle="modal" data-bs-target={`vehicle${index}`}>
                             <div className="card" data-bs-toggle="modal" data-bs-target={`#vehicle${index}`}>
                                 <div className="card-header"><h5>{vehicle.name}</h5></div>
                                 <div className="card-body">
@@ -582,12 +582,12 @@ export default function Film(){
                     </div>
                 </div>
                 {/* End of Vehicle */}
-                <div className="container characters mt-4">
+                <div className="container characters mt-4 col-9 col-sm-12">
                     <div className="title"><h2 className="border-start border-bottom border-3 border-warning ps-2 pb-2 ">Characters</h2></div>
                     <hr />
                     <div className="row justify-content-center starwars-content">
                     {charactersList.map((character, index) => (
-                        <div className="col-md-3 mb-3" key={character.name}>
+                        <div className="col-10 col-sm-6 col-md-4 col-lg-3 mb-3 mb-3" key={character.name}>
                             <div className="card" data-bs-toggle="modal" data-bs-target={`#character${index}`}>
                                 <div className="card-header"><h5>{character.name}</h5></div>
                                 <div className="card-body">
@@ -601,12 +601,12 @@ export default function Film(){
                     </div>
                 </div>
                 {/* End of characters */}
-                <div className="container planets mt-4">
+                <div className="container planets mt-4 col-9 col-sm-12">
                     <h2 className="border-start border-bottom border-warning border-4 ps-2 pb-2">Planets</h2>
                     <hr />
                     <div className="row justify-content-center starwars-content">
                         {planetsList.map((planet, index) => (
-                            <div className="col-md-3 mb-3" key={planet.index}>
+                            <div className="col-10 col-sm-6 col-md-4 col-lg-3 mb-3 mb-3" key={planet.index}>
                                 <div className="card" data-bs-toggle="modal" data-bs-target={`#planet${index}`}>
                                     <div className="card-header"><h5>{planet.name}</h5></div>
                                     <div className="card-body">
@@ -620,12 +620,12 @@ export default function Film(){
                     </div>
                 </div>
                 {/* end of planet */}
-                <div className="container species mt-4">
+                <div className="container species mt-4 col-9 col-sm-12">
                     <div className="title"><h2 className="border-start border-bottom border-warning border-3 ps-2 pb-2">Species</h2></div>
                     <hr />
                     <div className="row jsutify-content-center starwars-content">
                         {speciesList.map((species, index) => (
-                            <div className="col-md-3 mb-3" key={species.name}>
+                            <div className="col-10 col-sm-6 col-md-4 col-lg-3 mb-3 mb-3" key={species.name}>
                                 <div className="card" data-bs-toggle="modal" data-bs-target={`#species${index}`}>
                                     <div className="card-header"><h5>{species.name}</h5></div>
                                     <div className="card-body">

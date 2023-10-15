@@ -26,7 +26,7 @@ export default function Home({setIdFilm,setClickFilm, data}){
         <div className="section home-container">
             <div className="container banner text-white ">
             <div className="row justify-content-center">
-            <div className="col-md-8">
+            <div className="col-lg-8 col-md-10 col-sm-8">
                 <div className="carousel slide carousel-fade" data-bs-ride="carousel" id="slides-with-controls">
                     <div className="carousel-indicators">
                         <button className="active" data-bs-target="#slides-with-controls" data-bs-slide-to="0" aria-current="true" aria-label="Slides 1"></button>
@@ -60,7 +60,7 @@ export default function Home({setIdFilm,setClickFilm, data}){
             <div className="container-fluid card-container films-list mt-5">
                 <div className="row justify-content-center">
                     {data?.map((film, i) => (
-                    <div className="col-md-2" key={film.episode_id} onClick={()=>handleFilm(film.episode_id)}>
+                    <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-9 mb-4" key={film.episode_id} onClick={()=>handleFilm(film.episode_id)}>
                     <div className="card text-bg-dark">
                         <h6 className="card-header">{film.title}</h6>
                         <img src={`${cardFilm[i]}.jpg`} alt="" />

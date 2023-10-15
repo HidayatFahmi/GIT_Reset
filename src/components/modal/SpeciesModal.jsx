@@ -24,7 +24,7 @@ export default function SpeciesModal({species, index}){
                                     <li><b>Language</b></li>
                                 </ul>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-7">
                                 <ul style={{listStyleType:"none"}}>
                                     <li>{species.name}</li>
                                     <li>{species.classification}</li>

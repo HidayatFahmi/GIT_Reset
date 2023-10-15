@@ -186,23 +186,23 @@ function App() {
 
                                 <div className="dropdown-menu" aria-labelledby='dropdownMenuLink'>
                                   <a href="#" className='dropdown-item'>
-                                    <Link className="nav-link" aria-current="page" to="/starship/all">All Starship</Link>
+                                    <Link className="nav-link" aria-current="page" to="/starship/all" onClick={backData}>All Starship</Link>
                                   </a>
                                   <div className="dropdown-divider"></div>
                                   <a href="#" className='dropdown-item'>
-                                    <Link className="nav-link" aria-current="page" to="/vehicle/all">All Vehicles</Link>
+                                    <Link className="nav-link" aria-current="page" to="/vehicle/all" onClick={backData}>All Vehicles</Link>
                                   </a>
                                   <div className="dropdown-divider"></div>
                                   <a href="#" className='dropdown-item'>
-                                    <Link className="nav-link" aria-current="page" to="/character/all">All Characters</Link>
+                                    <Link className="nav-link" aria-current="page" to="/character/all" onClick={backData}>All Characters</Link>
                                   </a>
                                   <div className="dropdown-divider"></div>
                                   <a href="#" className='dropdown-item'>
-                                    <Link className="nav-link" aria-current="page" to="/planet/all">All Planets</Link>
+                                    <Link className="nav-link" aria-current="page" to="/planet/all" onClick={backData}>All Planets</Link>
                                   </a>
                                   <div className="dropdown-divider"></div>
                                   <a href="#" className='dropdown-item'>
-                                    <Link className="nav-link" aria-current="page" to="/species/all">All Species</Link>
+                                    <Link className="nav-link" aria-current="page" to="/species/all" onClick={backData}>All Species</Link>
                                   </a>
                                 </div>
                               </div>

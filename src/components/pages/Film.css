@@ -1,12 +1,4 @@
-.banner-film img{
-    background-image: url("/1FilmBanner.jpg");
-    height: 450px;
-    width: 700px;
-    background-size: cover;
-    margin-top: 20px;
-}
-
- .card img{
+.card img{
     height: 250px;
 }
 
@@ -59,10 +51,63 @@
     justify-content: center;
 }
 
-.running-characters img{
-    width: 380px;
+@media (max-width : 1950px){
+  .running-characters img{
+    width: 330px;
     height: 450px;
 }
+
+  .banner-film img{
+    background-image: url("/1FilmBanner.jpg");
+    height: 450px;
+    width: 680px;
+    background-size: cover;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width : 1220px){
+  .running-characters img{
+    width: 280px;
+    height: 370px;
+}
+
+  .banner-film img{
+    background-image: url("/1FilmBanner.jpg");
+    height: 370px;
+    width: 560px;
+    background-size: cover;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width : 1007px){
+  .running-characters img{
+    width: 220px;
+    height: 280px;
+}
+
+  .banner-film img{
+    background-image: url("/1FilmBanner.jpg");
+    height: 280px;
+    width: 380px;
+    background-size: cover;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width : 398px){
+
+  .banner-film img{
+    background-image: url("/1FilmBanner.jpg");
+    height: 200px;
+    width: 220px;
+    background-size: cover;
+    margin-top: 20px;
+  }
+}
+
+
 
 .starwars-content{
   width: 100%;
