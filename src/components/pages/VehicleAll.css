@@ -16,19 +16,62 @@ display: flex;
 justify-content: center;
 }
 
+@media(max-width : 2000px){
 .vehicleAll-banner img{
-    width: 750px;
-    height: 470px;
+    width: 640px;
+    height: 360px;
 }
+
+.vehicleAll-sidebar img{
+    width: 300px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 2000px){
+.vehicleAll-banner img{
+    width: 700px;
+    height: 450px;
+}
+
+.vehicleAll-sidebar img{
+    width: 280px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 1200px){
+    .vehicleAll-banner img{
+        width: 450px;
+        height: 300px;
+    }
+    
+    .vehicleAll-sidebar img{
+        width: 220px;
+        /* height: 360px; */
+    }
+    }
+
+
+    @media(max-width : 992px){
+        
+        .vehicleAll-sidebar img{
+            width: 400px;
+        }
+    }
+
+    @media(max-width : 575px){
+        
+        .vehicleAll-sidebar img{
+            width: 230px;
+        }
+        }
 
 .vehicleAll-sidebar{
     position: absolute;
     box-sizing: border-box;
-    right: 0;
+    right: 40px;
     height: 80vh;
     overflow-y: scroll;
 }
 
-.vehicleAll-sidebar img{
-    width: 400px;
-}

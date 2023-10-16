@@ -66,7 +66,7 @@ export default function VehicleAll() {
             All Star Wars Vehicles
           </h1>
           <div className="row">
-            <div className="col-7 vehicleAll-banner mt-4 border border-2 bg-dark">
+            <div className="d-none d-lg-block col-xl-7 col-md-6 planetAll-banner mt-4 border border-2 bg-dark">
                 <div className="row menu my-2 border-bottom border-dark border-2 pb-2">
                     <div className="col-6">
                         <button className="btn btn-warning w-50" onClick={()=>setImageActive(true)}>Image</button>
@@ -87,7 +87,7 @@ export default function VehicleAll() {
                     </div>
                 </div>
             </div>
-            <div className="col-4 border border-2 vehicleAll-sidebar mt-4 bg-dark text-center">
+            <div className="col-9 col-lg-4 col-xl-3 border border-2 planetAll-sidebar mt-4 text-center bg-dark">
               {allVehicleListId.map((vehicleId, index) => (
                 <div key={index}className="my-3 border border-2"onClick={() => handleBannerId(vehicleId, index)}>
                     <h4 className="title text-center border-bottom border-4 border-warning py-1 text-white">

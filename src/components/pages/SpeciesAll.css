@@ -9,7 +9,6 @@
     position: fixed;
     left: 3%;
     text-align: center;
-    background-image: url("/homeBg.jpg");
 }
 
 .speciesAll-banner .image-banner{
@@ -17,19 +16,62 @@ display: flex;
 justify-content: center;
 }
 
+@media(max-width : 2000px){
 .speciesAll-banner img{
-    width: 750px;
-    height: 470px;
+    width: 640px;
+    height: 360px;
 }
+
+.speciesAll-sidebar img{
+    width: 300px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 2000px){
+.speciesAll-banner img{
+    width: 700px;
+    height: 450px;
+}
+
+.speciesAll-sidebar img{
+    width: 280px;
+    /* height: 360px; */
+}
+}
+
+@media(max-width : 1200px){
+    .speciesAll-banner img{
+        width: 450px;
+        height: 300px;
+    }
+    
+    .speciesAll-sidebar img{
+        width: 220px;
+        /* height: 360px; */
+    }
+    }
+
+
+    @media(max-width : 992px){
+        
+        .speciesAll-sidebar img{
+            width: 400px;
+        }
+    }
+
+    @media(max-width : 575px){
+        
+        .speciesAll-sidebar img{
+            width: 230px;
+        }
+        }
 
 .speciesAll-sidebar{
     position: absolute;
     box-sizing: border-box;
-    right: 0;
+    right: 40px;
     height: 80vh;
     overflow-y: scroll;
 }
 
-.speciesAll-sidebar img{
-    width: 400px;
-}
